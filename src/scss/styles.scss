@@ -1,0 +1,77 @@
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 7%;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    ul {
+      display: flex;
+      padding: 8px 13px;
+      li {
+        margin-right: 70px;
+      }
+      &:nth-child(1) {
+        width: 67%;
+        .grey {
+          color: $bg;
+        }
+        &:hover {
+          background-color: $bg;
+          .grey {
+            color: white;
+          }
+        }
+      }
+      &:nth-child(2) {
+        width: 33%;
+        &:hover {
+          background-color: $bg;
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  article {
+    display: grid;
+    grid-template-rows: 9fr 1fr;
+    height: 100%;
+    img {
+      width: 100%;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      h3 {
+        text-transform: uppercase;
+        padding-left: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
