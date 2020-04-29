@@ -12,6 +12,7 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
+    "autoprefixer": "^9.7.6",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
@@ -28,7 +29,9 @@
   },
   "browserslist": {
     "browsers": [
-      "last 2 versions"
+      "last 2 versions",
+      "ie 6-8",
+      "Firefox > 20"
     ]
   }
 }
