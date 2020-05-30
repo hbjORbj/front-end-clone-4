@@ -29,9 +29,7 @@
   },
   "browserslist": {
     "browsers": [
-      "last 2 versions",
-      "ie 6-8",
-      "Firefox > 20"
+      "last 2 versions"
     ]
   }
 }
